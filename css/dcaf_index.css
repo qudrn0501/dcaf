@@ -99,11 +99,29 @@ main {
     margin-top: 5px;
 }
 .btn_info>a {
+    position: relative;
     display: block;
     color: #4a789a;
     border: 1px solid #4a789a;
-    padding: 10px 48px;
+    padding: 9px 47px;
     background-color: #fff;
+}
+.btn_info>a>.btn_ico {
+    position: absolute;
+    width: 45px; height: 44px;
+    display: inline-block;
+    opacity: 0;
+    background-image: url(../img/dcaf/ico-main-artisthouse.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0; top: 0;
+}
+.btn_info>a:hover {
+    border: 2px solid #1d5681;
+    color: #1d5681;
+}
+.btn_info>a:hover .btn_ico {
+    opacity: 1;
 }
 .sb_tab {
     display: flex;
