@@ -1,6 +1,9 @@
 /*-----------main start--------------*/
+/* (변경점) 스와이퍼1 적용 */
 .mySwiper1 {
     overflow: hidden;
+    padding-top: 50px;
+    box-sizing: border-box;
 }
 
 .mySwiper1 .swiper-wrapper {
@@ -17,7 +20,6 @@ width: 280px !important;
 margin-right: 26.6667px !important;
 text-align: center;
 font-size: 18px;
-background: #fff;
 
 /* Center slide text vertically */
 display: -webkit-box;
@@ -39,19 +41,19 @@ display: block;
 width: 100%;
 height: 100%;
 object-fit: cover;
+transition: transform 0.3s;
+
+}
+
+.mySwiper1 .swiper-slide:hover img {
+    transform: translate(0, -50px);
 }
 
 .swiper-pagination {
 z-index: 10 !important;
 bottom: -69px !important;
 }
-.mySwiper2 {
-    position: relative;
-}
 
-/* .mySwiper2 .swiper-pagination-bullets {
-    bottom: ;
-} */
 .swiper-pagination-bullet {
     width: 14px !important;
     height: 14px !important;
@@ -61,12 +63,19 @@ bottom: -69px !important;
     box-sizing: border-box !important;
     margin-right: 5px !important;
     background: transparent !important;
+    margin-left: 0 !important;
+    margin-right: 5px !important;
 }
 .swiper-pagination-bullet-active {
     width: 42px !important;
     background-color: #7d7d7d !important;
 }
 
+/* (변경점) 스와이퍼1 적용 끝 */
+
+.mySwiper2 {
+    position: relative;
+}
 
 .mySwiper2 .swiper-slide {
     width: 100% !important;
@@ -96,6 +105,7 @@ bottom: -69px !important;
     background-color: aquamarine;
     border: 1px solid #000;
   }
+  /* (변경점) 스와이퍼 끌어오기 끝 */
 /*-----------first section start-----------*/
 main {
     overflow: hidden;
@@ -125,15 +135,18 @@ main {
 .tab_third>.active_underline>a {
     color: #000;
 }
+/* (변경점) 고정 배너 적용 */
 .bnr_list {
     display: flex;
     justify-content: space-between;
-    padding-top: 121px;
+    padding-top: 71px;
 }
 .bnr_fixed {
     margin-right: 26.6667px;
     width: 280px;
     background-color: #f3f3f5;
+    padding-top: 50px;
+    box-sizing: border-box;
 }
 
 .bnr_fixed img {
@@ -144,7 +157,7 @@ main {
 .bnr_fixed:hover img {
     transform: translate(0, -50px);
 }
-
+/* (변경점) 고정 배너 적용 끝 */
 
 
 
@@ -549,25 +562,74 @@ main {
 
 
 @media screen and (max-width: 1199px) {
-    .board {
-        padding-top: 0px;
+    /* (변경점) 스와이퍼1 반응형 */
+    .mySwiper1 {
+        overflow: visible;
+        padding-top: 25px;
+        box-sizing: border-box;
     }
+
+    .mySwiper1 .swiper-wrapper {
+        width: 70% !important;
+    }
+    .mySwiper1 .swiper {
+        width: 75%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .mySwiper1 .swiper-slide {
+        width: 33.3333% !important;
+        margin-right: 12px !important;
+    }
+
+    .mySwiper1 .swiper-slide:hover img {
+        transform: translate(0, 0px);
+    }
+    .swiper-pagination {
+        position: relative !important;
+        z-index: 10 !important;
+        bottom: -100px !important;
+        left: -10% !important;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        margin-left: 0 !important;
+        margin-right: 3px !important;
+        border: 1px solid #7d7d7d !important;
+    }
+    .swiper-pagination-bullet-active {
+        width: 22px !important;
+    }
+
+    .board {
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 150px;
+    }
+    /* (변경점) 스와이퍼1 반응형 끝 */
+
+
+    
     .tab_third>li>a {
         font-size: 3.125vmin;
     }
     .tab_third>.active_underline>a {
         font-size: 3.90625vmin;
     }
+    /* (변경점) 고정 배너 반응형 삭제 */
     .bnr_list {
         width: 133%;
         flex-flow: row nowrap;
+        padding-top: 0;
     }
-    .bnr_list>li {
-        margin-right: 20px;
-        width: 33.3333%;
-    }.bnr_list>li:hover img {
-        transform: translate(0);
+
+    .bnr_fixed {
+        display: none;
     }
+    /* (변경점) 고정 배너 반응형 삭제 끝 */
     .sec_first {
         flex-direction: column;
         align-items: center;
