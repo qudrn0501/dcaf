@@ -9,6 +9,17 @@ var swiper1 = new Swiper(".mySwiper1", {
   },
 });
 
+//swiper 3
+var swiper3 = new Swiper(".mySwiper3", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  slidesPerGroup: 4,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 //swiper 2
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,

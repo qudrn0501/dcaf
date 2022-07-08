@@ -73,6 +73,8 @@ bottom: -69px !important;
 
 /* (변경점) 스와이퍼1 적용 끝 */
 
+
+/* (변경점) 스와이퍼2(문화예술정보) 적용 */
 .mySwiper2 {
     position: relative;
 }
@@ -105,7 +107,7 @@ bottom: -69px !important;
     background-color: aquamarine;
     border: 1px solid #000;
   }
-  /* (변경점) 스와이퍼 끌어오기 끝 */
+/* (변경점) 스와이퍼2(문화예술정보) 적용 끝 */
 
 
 /* (변경점) 탭메뉴 active */
