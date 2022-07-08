@@ -1,4 +1,73 @@
 /*-----------main start--------------*/
+.mySwiper1 {
+    overflow: hidden;
+}
+
+.mySwiper1 .swiper-wrapper {
+    width: 70% !important;
+}
+.mySwiper1 .swiper {
+    width: 75%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.mySwiper1 .swiper-slide {
+width: 280px !important;
+margin-right: 26.6667px !important;
+text-align: center;
+font-size: 18px;
+background: #fff;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.mySwiper1 .swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.swiper-pagination {
+z-index: 10 !important;
+bottom: -69px !important;
+}
+.mySwiper2 {
+    position: relative;
+}
+
+/* .mySwiper2 .swiper-pagination-bullets {
+    bottom: ;
+} */
+.swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    font-size: 0 !important;
+    border: 2px solid #7d7d7d !important;
+    border-radius: 20px !important;
+    box-sizing: border-box !important;
+    margin-right: 5px !important;
+    background: transparent !important;
+}
+.swiper-pagination-bullet-active {
+    width: 42px !important;
+    background-color: #7d7d7d !important;
+}
+
+
 .mySwiper2 .swiper-slide {
     width: 100% !important;
     height: 100% !important;
@@ -56,44 +125,24 @@ main {
 .tab_third>.active_underline>a {
     color: #000;
 }
-
 .bnr_list {
     display: flex;
     justify-content: space-between;
     padding-top: 121px;
 }
-.bnr_list>li {
-    margin-right: 20px;
+.bnr_fixed {
+    margin-right: 26.6667px;
     width: 280px;
+    background-color: #f3f3f5;
 }
-.bnr_list>li:last-child {
-    margin-right: 0;
-}
-.bnr_list>li img {
-    width: 100%;
+
+.bnr_fixed img {
+    z-index: 1;
+    width: 280px;
     transition: transform 0.3s;
 }
-.bnr_list>li:hover img {
+.bnr_fixed:hover img {
     transform: translate(0, -50px);
-}
-.bnr_dot {
-    display: flex;
-    justify-content: center;
-    margin-top: 69px;
-}
-.bnr_dot>li {
-    display: block;
-    width: 14px;
-    height: 14px;
-    font-size: 0;
-    border: 2px solid #7d7d7d;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-right: 5px;
-}
-.bnr_dot .active_dot {
-    width: 42px;
-    background-color: #7d7d7d;
 }
 
 
