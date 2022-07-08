@@ -64,12 +64,11 @@
         <section class="board">
             <article class="w1200">
                 <ul class="tab_third">
-                    <li class="active_underline"><a href="">주요소식</a></li>
-                    <li><a href="">사업공모/결과</a></li>
-                    <li><a href="">공지사항/입찰/채용</a></li>
+                    <li class="tab_links active" onclick="openTab(event, 'banner')">주요소식</li>
+                    <li class="tab_links" onclick="openTab(event, 'business')">사업공모/결과</li>
+                    <li class="tab_links" onclick="openTab(event, 'notice')">공지사항/입찰/채용</li>
                 </ul>
-                <div class="bnr_wrap">
-                    
+                <div id="banner" class="bnr_wrap tab_content"> 
                     <div class="bnr_list">   
                         <div class="bnr_fixed"><a href="">
                             <img src="img/dcaf/ban1.png" alt="">
@@ -145,7 +144,7 @@
                         
                     </div>
 
-                    <ul class="bnr_dot mo_none">
+                    <!-- <ul class="bnr_dot mo_none">
                         <li class="active_dot"></li>
                         <li></li>
                         <li></li>
@@ -158,7 +157,13 @@
                         <li></li>
                         <li></li>
                         <li></li>
-                    </ul>
+                    </ul> -->
+                </div>
+                <div id="business" class="bnr_business tab_content">
+
+                </div>
+                <div id="notice" class="bnr_notice tab_content">
+                    
                 </div>
             </article>
         </section>

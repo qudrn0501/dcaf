@@ -106,6 +106,15 @@ bottom: -69px !important;
     border: 1px solid #000;
   }
   /* (변경점) 스와이퍼 끌어오기 끝 */
+
+
+/* (변경점) 탭메뉴 active */
+.tab_third li.active {
+    border-bottom: 4px solid #ff9f00;
+    color: #000;
+}
+/* (변경점) 탭메뉴 active 끝 */
+
 /*-----------first section start-----------*/
 main {
     overflow: hidden;
@@ -118,23 +127,18 @@ main {
 .tab_third {
     display: flex;
 }
+/* (변경점) 탭메뉴 a태그 제거 */
 .tab_third>li {
     width: 33.3333%;
     padding: 11px 0;
     text-align: center;
     border-bottom: 2px solid #fff;
-}
-.tab_third>li>a {
     font-size: 20px;
     color: #a2a2a2;
     font-weight: 700;
 }
-.tab_third>.active_underline {
-    border-bottom: 4px solid #ff9f00;
-}
-.tab_third>.active_underline>a {
-    color: #000;
-}
+/* (변경점) 탭메뉴 a태그 제거 끝 */
+
 /* (변경점) 고정 배너 적용 */
 .bnr_list {
     display: flex;
@@ -612,13 +616,16 @@ main {
     /* (변경점) 스와이퍼1 반응형 끝 */
 
 
-    
-    .tab_third>li>a {
+    /* (변경점) 탭메뉴 a태그 제거 */
+    .tab_third>li {
         font-size: 3.125vmin;
     }
-    .tab_third>.active_underline>a {
+    .tab_third>.active_underline {
         font-size: 3.90625vmin;
     }
+    /* (변경점) 탭메뉴 a태그 제거 끝 */
+
+    
     /* (변경점) 고정 배너 반응형 삭제 */
     .bnr_list {
         width: 133%;
