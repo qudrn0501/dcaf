@@ -1,13 +1,14 @@
 /*-----------main start--------------*/
 /* (변경점) 스와이퍼1 적용 */
 .mySwiper1 {
-    overflow: hidden;
+    max-width: 893.3333px !important;
     padding-top: 50px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .mySwiper1 .swiper-wrapper {
-    width: 70% !important;
+    width: 100% !important;
 }
 .mySwiper1 .swiper {
     width: 75%;
@@ -50,8 +51,9 @@ transition: transform 0.3s;
 }
 
 .swiper-pagination {
-z-index: 10 !important;
-bottom: -69px !important;
+    max-width: 1920px !important;
+    left: 3% !important;
+    bottom: -85px !important;
 }
 
 .swiper-pagination-bullet {
@@ -80,15 +82,193 @@ bottom: -69px !important;
 
 .mySwiper3 .swiper-slide {
     width: 100% !important;
-    background-color: #2b80bf;
     display: flex;
     justify-content: space-between;
     margin-top: 115px;
 }
 .mySwiper3 .swiper-slide div {
     width: 279px; height: 420px;
-    background-color: #5c5c5c;
+    background-color: #fff;
+    padding: 29px 20px 0;
+    position: relative;
+    box-sizing: border-box;
+    transition: background .35s linear, transform .35s linear, opacity .35s linear;
 }
+.mySwiper3 .swiper-slide .type1:hover {
+    background-color: #ccdcef;
+}
+.mySwiper3 .swiper-slide .type2:hover {
+    background-color: #ffdaaa;
+}
+.mySwiper3 .swiper-slide .cur {
+    display: block;
+    width: 220px;
+    height: 30px;
+    padding: 2px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #fff;
+    transition: border .35s linear;
+}
+.mySwiper3 .swiper-slide .type1 .cur {
+    border: 1px solid #5c70af;
+    color: #5c70af;
+}
+.mySwiper3 .swiper-slide .type2 .cur {
+    border: 1px solid #cb9513;
+    color: #cb9513;
+}
+.mySwiper3 .swiper-slide .title {
+    position: relative;
+    display: block;
+    margin: 50px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.mySwiper3 .swiper-slide .deco {
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 1px;
+    top: 207px;
+    left: 50%;
+    background: #000;
+    transform: translate(-50%, 0);
+}
+
+.mySwiper3 .swiper-slide .date {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 120px;
+    display: block;
+    font-size: 16px;
+    /* margin: 113px auto 0; */
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.mySwiper3 .swiper-slide .more {
+    position: absolute;
+    display: block;
+    width: 164px;
+    bottom: 45px;
+    left: 50%;
+    padding: 6px 0;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+.mySwiper3 .swiper-slide .type1 .more {
+    border: 1px solid #5c70af;
+    color: #5c70af;
+}
+.mySwiper3 .swiper-slide .type2 .more {
+    border: 1px solid #cb9513;
+    color: #cb9513;
+}
+
+.bnr_notice {
+    margin-top: 77px;
+}
+.bnr_notice ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    height: 506px;
+    padding: 30px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    transition: background .2s linear, box-shadow .2s linear;
+}
+.bnr_notice ul:not(:last-of-type) {
+    margin-right: 24px;
+}
+.bnr_notice ul:hover {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgb(33 33 33 / 5%);
+}
+
+.bnr_notice li.title {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 45px;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+}
+.bnr_notice li.title::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 48px;
+    height: 2px;
+    bottom: -11px;
+    left: 2px;
+    background-color: #1279bc;
+}
+.bnr_notice li.title a {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 0;
+    font-size: 0;
+    background-image: url(../img/dcaf/icn_plus3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(0,-50%);
+}
+
+.bnr_notice li:not(:last-of-type) {
+    margin-bottom: 23px;
+}
+
+.bnr_notice li:not(:first-of-type) {
+    height: 71px;
+}
+
+.bnr_notice li {
+    text-align: right;
+}
+
+.bnr_notice li a {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.bnr_notice li a + .date {
+    display: block;
+    line-height: 1;
+    padding-right: 6px;
+    font-size: 14px;
+    color: #808080;
+}
+
 
 
 
@@ -126,11 +306,13 @@ bottom: -69px !important;
     background-color: aquamarine;
     border: 1px solid #000;
   }
+
+
 /* (변경점) 스와이퍼2(문화예술정보) 적용 끝 */
 
 
 /* (변경점) 탭메뉴 active */
-.tab_third li.on_active {
+.tab_third li.active {
     border-bottom: 4px solid #ff9f00;
     color: #000;
 }
@@ -164,7 +346,7 @@ main {
 .tab_content {
     display: none;
 }
-.tab_content.on_active {
+.tab_content.active {
     display: block;
 }
 
@@ -173,7 +355,7 @@ main {
 /* (변경점) 고정 배너 적용 */
 .bnr_list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 71px;
 }
 .bnr_fixed {
@@ -182,6 +364,7 @@ main {
     background-color: #f3f3f5;
     padding-top: 50px;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .bnr_fixed img {
