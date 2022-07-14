@@ -189,7 +189,9 @@ transition: transform 0.3s;
     border: 1px solid #cb9513;
     color: #cb9513;
 }
+/* (변경점) 스와이퍼3(사업공모결과) 끝 */
 
+/* (변경점) 공지사항/입찰/채용 */
 .bnr_notice {
     margin-top: 77px;
 }
@@ -271,7 +273,7 @@ transition: transform 0.3s;
     font-size: 14px;
     color: #808080;
 }
-/* (변경점) 스와이퍼3(사업공모결과) 끝 */
+/* (변경점) 공지사항/입찰/채용 끝 */
 
 /* (변경점) 스와이퍼2(문화예술정보) */
 .mySwiper2 {
@@ -869,6 +871,63 @@ main {
         padding: 0;
         font-size: 13px;
     }
+    /* (변경점) 스와이퍼3 반응형*/
+
+    /* (변경점) 공지사항/입찰/채용 */
+    .bnr_notice {
+        padding: 0 2.5vmin 25px;
+        margin: 25px 0 0;
+    }
+    .bnr_notice ul {
+        width: 100%;
+        height: auto;
+        padding: 13px 23px 25px;
+        background-color: #fff;
+        box-shadow: 5px 5px 10px rgb(33 33 33 / 5%);
+    }
+    .bnr_notice > ul:not(:last-of-type) {
+        margin-bottom: 3.75vmin;
+    }
+    .bnr_notice li.title {
+        margin-bottom: 29px;
+        font-size: 16.01px;
+    }
+    .bnr_notice li.title::before {
+        width: 25px;
+        bottom: -7px;
+    }
+    .bnr_notice li.title a {
+        width: 11px;
+        height: 11px;
+        right: -5px;
+    }
+
+    .bnr_notice li:not(:last-of-type) {
+        margin-bottom: 23px;
+    }
+
+    .bnr_notice li:not(:first-of-type) {
+        height: auto;
+    }
+
+    .bnr_notice li {
+        text-align: right;
+    }
+
+    .bnr_notice li a {
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .bnr_notice li a + .date {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .bnr_notice ul li:last-of-type:not(.empty) {
+        display: none;
+    }
+    /* (변경점) 공지사항/입찰/채용 끝 */
 
 
 
