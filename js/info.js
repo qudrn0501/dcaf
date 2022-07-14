@@ -11,13 +11,20 @@ var swiper1 = new Swiper(".mySwiper1", {
 
 //swiper 3
 var swiper3 = new Swiper(".mySwiper3", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  slidesPerGroup: 1,
+  slidesPerView: 2,
+  spaceBetween: 15,
+  slidesPerGroup: 2,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 28,
+      slidesPerGroup: 4
+    }
+  }
 });
 
 //swiper 2

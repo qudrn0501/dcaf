@@ -72,16 +72,19 @@ transition: transform 0.3s;
     width: 42px !important;
     background-color: #7d7d7d !important;
 }
-
 /* (변경점) 스와이퍼1 적용 끝 */
 
 /* (변경점) 스와이퍼3(사업공모결과) */
 .mySwiper3 {
     overflow: hidden;
 }
+.mySwiper3 .swiper-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
 
 .mySwiper3 .swiper-slide {
-    width: 100% !important;
+    width: 279px !important;
     display: flex;
     justify-content: space-between;
     margin-top: 115px;
@@ -268,12 +271,9 @@ transition: transform 0.3s;
     font-size: 14px;
     color: #808080;
 }
+/* (변경점) 스와이퍼3(사업공모결과) 끝 */
 
-
-
-
-
-/* (변경점) 스와이퍼2(문화예술정보) 적용 */
+/* (변경점) 스와이퍼2(문화예술정보) */
 .mySwiper2 {
     position: relative;
 }
@@ -307,8 +307,7 @@ transition: transform 0.3s;
     border: 1px solid #000;
   }
 
-
-/* (변경점) 스와이퍼2(문화예술정보) 적용 끝 */
+/* (변경점) 스와이퍼2(문화예술정보) 끝 */
 
 
 /* (변경점) 탭메뉴 active */
@@ -349,7 +348,6 @@ main {
 .tab_content.active {
     display: block;
 }
-
 /* (변경점) 탭메뉴 추가 설정 끝 */
 
 /* (변경점) 고정 배너 적용 */
@@ -376,9 +374,6 @@ main {
     transform: translate(0, -50px);
 }
 /* (변경점) 고정 배너 적용 끝 */
-
-
-
 
 
 .sec_first img {
@@ -785,6 +780,7 @@ main {
         overflow: visible;
         padding-top: 25px;
         box-sizing: border-box;
+        max-width: 100% !important;
     }
 
     .mySwiper1 .swiper-wrapper {
@@ -828,6 +824,54 @@ main {
         padding-bottom: 150px;
     }
     /* (변경점) 스와이퍼1 반응형 끝 */
+
+    /* (변경점) 스와이퍼3 반응형*/
+    .mySwiper3 {
+        padding-top: 25px;
+    }
+    .mySwiper3 .swiper-slide {
+        width: 66.5625vmin !important;
+        min-width: 0;
+        height: 211px;
+        margin-top: 0px;
+    }
+    .mySwiper3 .swiper-slide div {
+        width: 66.5625vmin !important;
+        min-width: 0;
+        height: 211px;
+        padding: 15px 20px 0;
+    }
+    .mySwiper3 .swiper-slide .cur {
+        width: 87.283236%;
+        height: 26px;
+        font-size: 13px;
+    }
+    .mySwiper3 .swiper-slide .title {
+        margin: 16px 0 0;
+        font-size: 13px;
+    }
+    .mySwiper3 .swiper-slide .deco {
+        width: 17px;
+        top: 106px;
+    }
+    
+    .mySwiper3 .swiper-slide .date {
+        bottom: 67px;
+        font-size: 12px;
+    }
+    
+    
+    .mySwiper3 .swiper-slide .more {
+        width: 100px;
+        height: 24px;
+        line-height: 22px;
+        bottom: 21px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+
+
 
 
     /* (변경점) 탭메뉴 a태그 제거 */
