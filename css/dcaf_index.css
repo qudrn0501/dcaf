@@ -73,6 +73,25 @@ bottom: -69px !important;
 
 /* (변경점) 스와이퍼1 적용 끝 */
 
+/* (변경점) 스와이퍼3(사업공모결과) */
+.mySwiper3 {
+    overflow: hidden;
+}
+
+.mySwiper3 .swiper-slide {
+    width: 100% !important;
+    background-color: #2b80bf;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
+}
+.mySwiper3 .swiper-slide div {
+    width: 279px; height: 420px;
+    background-color: #5c5c5c;
+}
+
+
+
 
 /* (변경점) 스와이퍼2(문화예술정보) 적용 */
 .mySwiper2 {
@@ -111,7 +130,7 @@ bottom: -69px !important;
 
 
 /* (변경점) 탭메뉴 active */
-.tab_third li.active {
+.tab_third li.on_active {
     border-bottom: 4px solid #ff9f00;
     color: #000;
 }
@@ -140,6 +159,16 @@ main {
     font-weight: 700;
 }
 /* (변경점) 탭메뉴 a태그 제거 끝 */
+
+/* (변경점) 탭메뉴 추가 설정 */
+.tab_content {
+    display: none;
+}
+.tab_content.on_active {
+    display: block;
+}
+
+/* (변경점) 탭메뉴 추가 설정 끝 */
 
 /* (변경점) 고정 배너 적용 */
 .bnr_list {
