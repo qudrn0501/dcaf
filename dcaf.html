@@ -392,18 +392,18 @@
                         <a href=""><span class="btn_ico"></span> 대전예술가의 집 문화예술정보</a>
                     </div>
                 </div>
-                <ul class="sb_tab">
-                    <li class="active_sb" onclick="showFilter(this)" id="all" data-fest="all"><a class="active_sub" href="#none">전체</a></li>
-                    <li onclick="showFilter(this)" id="perform" data-fest="perform"><a href="#none">공연</a></li>
-                    <li onclick="showFilter(this)" id="display" data-fest="display"><a href="#none">전시</a></li>
-                    <li onclick="showFilter(this)" id="festival" data-fest="festival"><a href="#none">행사</a></li>
-                    <li onclick="showFilter(this)" id="education" data-fest="education"><a href="#none">교육</a></li>
-                    <li onclick="showFilter(this)" id="etc" data-fest="etc"><a href="#none">기타</a></li>
+                <ul class="sb_tab type">
+                    <li class="on" data-code><a class="active_sub" href="#none">전체</a></li>
+                    <li data-code="A30-A"><a href="#none">공연</a></li>
+                    <li data-code="A30-B"><a href="#none">전시</a></li>
+                    <li data-code="A30-C"><a href="#none">행사</a></li>
+                    <li data-code="A30-D"><a href="#none">교육</a></li>
+                    <li data-code="A30-Z"><a href="#none">기타</a></li>
                 </ul>
                 <div class="mySwiper2">
                     <div class="sb_list_wrap swiper-wrapper">
                         <div class="sb_list swiper-slide">
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">청춘예찬 부제: 젊음을 기뻐하고 존경한다</h3>
@@ -412,7 +412,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type3">
                                 <a href="#none">
                                     <span class="cate t_gold">행사</span>
                                     <h3 class="sb_title">2022 대전 시민랩 공모사업 디자인 컨설팅 워크숍</h3>
@@ -421,7 +421,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">에라토 정기연주회</h3>
@@ -430,7 +430,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type2">
                                 <a href="#none">
                                     <span class="cate t_teal">전시</span>
                                     <h3 class="sb_title">매화</h3>
@@ -439,7 +439,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">四季...춤으로 담다</h3>
@@ -448,7 +448,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경 </h3>
@@ -457,7 +457,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type4">
                                 <a href="#none">
                                     <span class="cate t_purple">교육</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 무형문화전수학교 수강생 추가모집</h3>
@@ -466,7 +466,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">2022예술인파견지원 예술로 예술인 동반자사업 매칭데이</h3>
@@ -477,7 +477,7 @@
                             </div>
                         </div>
                         <div class="sb_list swiper-slide">
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">청춘예찬 부제: 젊음을 기뻐하고 존경한다</h3>
@@ -486,7 +486,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type3">
                                 <a href="#none">
                                     <span class="cate t_gold">행사</span>
                                     <h3 class="sb_title">2022 대전 시민랩 공모사업 디자인 컨설팅 워크숍</h3>
@@ -495,7 +495,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">에라토 정기연주회</h3>
@@ -504,7 +504,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type2">
                                 <a href="#none">
                                     <span class="cate t_teal">전시</span>
                                     <h3 class="sb_title">매화</h3>
@@ -513,7 +513,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">四季...춤으로 담다</h3>
@@ -522,7 +522,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경 </h3>
@@ -531,7 +531,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type4">
                                 <a href="#none">
                                     <span class="cate t_purple">교육</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 무형문화전수학교 수강생 추가모집</h3>
@@ -540,7 +540,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">2022예술인파견지원 예술로 예술인 동반자사업 매칭데이</h3>
@@ -551,7 +551,7 @@
                             </div>
                         </div>
                         <div class="sb_list swiper-slide">
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">청춘예찬 부제: 젊음을 기뻐하고 존경한다</h3>
@@ -560,7 +560,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type3">
                                 <a href="#none">
                                     <span class="cate t_gold">행사</span>
                                     <h3 class="sb_title">2022 대전 시민랩 공모사업 디자인 컨설팅 워크숍</h3>
@@ -569,7 +569,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">에라토 정기연주회</h3>
@@ -578,7 +578,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type2">
                                 <a href="#none">
                                     <span class="cate t_teal">전시</span>
                                     <h3 class="sb_title">매화</h3>
@@ -587,7 +587,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">四季...춤으로 담다</h3>
@@ -596,7 +596,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경 </h3>
@@ -605,7 +605,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type4">
                                 <a href="#none">
                                     <span class="cate t_purple">교육</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 무형문화전수학교 수강생 추가모집</h3>
@@ -614,7 +614,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="type1">
                                 <a href="#none">
                                     <span class="cate t_blue">공연</span>
                                     <h3 class="sb_title">2022예술인파견지원 예술로 예술인 동반자사업 매칭데이</h3>
@@ -710,6 +710,7 @@
         </div>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/info.js"></script>
 </html>

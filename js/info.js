@@ -58,3 +58,35 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+//문화예술정보 data- 탭
+$(function () {
+
+  $('.sb_tab li a').click(function (e) {
+    var dataCode = $(this).parent('li').data('code');
+    $(this).parent('li').addClass('on').siblings('li').removeClass('on');
+    $('.mySwiper2 .swiper-wrapper .swiper-slide div').each(function () {
+      $(this).removeClass('temp_opa');
+      switch (dataCode) {
+        case 'A30_A':
+          if ($(this).hasClass('type1')) $(this).addClass('temp_opa');
+          break;
+        case 'A30_B':
+          if ($(this).hasClass('type2')) $(this).addClass('temp_opa');
+          break;
+        case 'A30_C':
+          if ($(this).hasClass('type3')) $(this).addClass('temp_opa');
+          break;
+        case 'A30_D':
+          if ($(this).hasClass('type4')) $(this).addClass('temp_opa');
+          break;
+        case 'A30_Z':
+          if ($(this).hasClass('type5')) $(this).addClass('temp_opa');
+          break;
+        default:
+          break;
+      };
+    });
+    e.preventDefault();
+  })
+})

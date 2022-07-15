@@ -436,9 +436,47 @@ transition: transform 0.3s;
     background-image: url(../img/dcaf/20220329093418471.jpg);
 }
 
+.sb_tab li.on {
 
-
-
+}
+.sb_tab li:nth-of-type(n).on a {
+    border-left: 0;
+    border-right: 0;
+    border-top-width: 2px;
+    border-top-color: #dcdcdc;
+}
+.sb_tab li.on a {
+    padding: 9px 0;
+    border: 1px solid #1d5681;
+    color: #1d5681;
+}
+.sb_tab li:nth-of-type(1).on a {
+    border: 3px solid #1d5681;
+    color: #1d5681;
+}
+.sb_tab li:nth-of-type(2).on a {
+    border: 3px solid #2b80bf;
+    color: #2b80bf;
+}
+.sb_tab li:nth-of-type(3).on a {
+    border: 3px solid #2c978e;
+    color: #2c978e;
+}
+.sb_tab li:nth-of-type(4).on a {
+    border: 3px solid #9c7427;
+    color: #9c7427;
+}
+.sb_tab li:nth-of-type(5).on a {
+    border: 3px solid #7c1c81;
+    color: #7c1c81;
+}
+.sb_tab li:nth-of-type(6).on a {
+    border: 3px solid #515050;
+    color: #515050;
+}
+.mySwiper2 .swiper-wrapper .swiper-slide div.temp_opa {
+    opacity: 0.35;
+}
 
 
 /* (변경점) 스와이퍼2(문화예술정보) 끝 */
