@@ -69,19 +69,19 @@ $(function () {
       $(this).removeClass('temp_opa');
       switch (dataCode) {
         case 'A30_A':
-          if ($(this).hasClass('type1')) $(this).addClass('temp_opa');
+          if (!$(this).hasClass('type1')) $(this).addClass('temp_opa');
           break;
         case 'A30_B':
-          if ($(this).hasClass('type2')) $(this).addClass('temp_opa');
+          if (!$(this).hasClass('type2')) $(this).addClass('temp_opa');
           break;
         case 'A30_C':
-          if ($(this).hasClass('type3')) $(this).addClass('temp_opa');
+          if (!$(this).hasClass('type3')) $(this).addClass('temp_opa');
           break;
         case 'A30_D':
-          if ($(this).hasClass('type4')) $(this).addClass('temp_opa');
+          if (!$(this).hasClass('type4')) $(this).addClass('temp_opa');
           break;
         case 'A30_Z':
-          if ($(this).hasClass('type5')) $(this).addClass('temp_opa');
+          if (!$(this).hasClass('type5')) $(this).addClass('temp_opa');
           break;
         default:
           break;
