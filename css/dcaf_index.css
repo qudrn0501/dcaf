@@ -277,7 +277,14 @@ transition: transform 0.3s;
 
 /* (변경점) 스와이퍼2(문화예술정보) */
 .mySwiper2 {
+    width: calc(100% + 20px);
     position: relative;
+    overflow: hidden;
+}
+.mySwiper2 .swiper-wrapper {
+    width: 100%;
+    /* overflow: hidden; */
+    margin-top: 56px;
 }
 
 .mySwiper2 .swiper-slide {
@@ -285,9 +292,7 @@ transition: transform 0.3s;
     height: 100% !important;
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+    margin-left: 0px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -302,12 +307,139 @@ transition: transform 0.3s;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
-  .mySwiper2 .swiper-slide div {
-    width: 24%; height: 200px;
-    background-color: aquamarine;
-    border: 1px solid #000;
-  }
+}
+.mySwiper2 .swiper-slide div {
+    width: 25%; 
+}
+.mySwiper2 .swiper-slide div a {
+    display: block;
+    margin: 10px;
+    width: calc(100% - 20px);
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    height: 200px;
+    position: relative;
+}
+
+.cate {
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    top: 10px;
+    right: 9px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 20;
+    text-align: center;
+}
+.t_blue {
+    background-color: #2b80bf;
+}
+.t_gold {
+    background-color: #9c7427;
+}
+.t_teal {
+    background-color: #2c978e;
+}
+.t_purple {
+    background-color: #7c1c81;
+}
+
+.sb_title {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sb_date {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    bottom: 20px;
+    color: #5c5c5c;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sb_status {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 40px;
+    width: 103px;
+    padding: 4px 10px;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.yet {
+    background-color: #bfbfbf;
+}
+.now {
+    background-color: #f29a09;
+}
+.sb_thum {
+    overflow: hidden;
+    position: relative;
+    display: none;
+    width: 103.928571% !important;
+    height: 110.606060%;
+    top: -5.303030%;
+    left: -1.964285%;
+    box-shadow: 10px 10px 6px rgb(0 0 0 / 10%);
+
+}
+.sb_thum>img {
+    width: 100%;
+}
+.sb_thum::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(../img/dcaf/icn_link.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sb_list a:hover .sb_thum {
+    display: block;
+    background-image: url(../img/dcaf/back_none.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.sb_list a:hover .thum_test {
+    background-image: url(../img/dcaf/20220329093418471.jpg);
+}
+
+
+
+
+
 
 /* (변경점) 스와이퍼2(문화예술정보) 끝 */
 
@@ -451,13 +583,13 @@ main {
     color: #1d5681;
     border: 3px solid #1d5681;
 }
-.sb_list_wrap {
+/* .sb_list_wrap {
     width: 100%;
     overflow: hidden;
     margin-top: 56px;
 }
 .sb_list {
-    width: calc(100% + 20px);
+    width: 100%;
     margin-left: -10px;
     display: flex;
     flex-wrap: wrap;
@@ -581,7 +713,7 @@ main {
 }
 .sb_list a:hover .sb_thum {
     display: block;
-}
+} */
 
 
 
@@ -978,8 +1110,8 @@ main {
         border-left: none;
         border-right: none;
     }
+    /* (변경점) overflow-x : scroll 삭제 */
     .sb_list_wrap {
-        overflow-x: scroll;
         width: 200%;
     }
     .sb_list {

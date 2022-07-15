@@ -36,7 +36,7 @@ var swiper3 = new Swiper(".mySwiper3", {
 //swiper 2
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 0,
 
   navigation: {
     nextEl: ".swiper-button-next",
