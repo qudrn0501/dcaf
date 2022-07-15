@@ -1,19 +1,25 @@
 //swiper 1
 var swiper1 = new Swiper(".mySwiper1", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 26.6667,
-  slidesPerGroup: 3,
+  slidesPerGroup: 4,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    1199: {
+      slidesPerView: 3,
+      spaceBetween: 26.6667,
+      slidesPerGroup: 3
+    }
+  }
 });
 
 //swiper 3
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 2,
   spaceBetween: 15,
-  slidesPerGroup: 2,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
