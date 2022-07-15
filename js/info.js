@@ -65,7 +65,7 @@ $(function () {
   $('.sb_tab li a').click(function (e) {
     var dataCode = $(this).parent('li').data('code');
     $(this).parent('li').addClass('on').siblings('li').removeClass('on');
-    $('.mySwiper2 .swiper-wrapper .swiper-slide div').each(function () {
+    $('.sb_list_wrap .sb_list div').each(function () {
       $(this).removeClass('temp_opa');
       switch (dataCode) {
         case 'A30_A':
@@ -89,4 +89,5 @@ $(function () {
     });
     e.preventDefault();
   })
+
 })

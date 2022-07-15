@@ -63,33 +63,79 @@
 
 
     <main>
-        <section class="sub_topcont">
-            <div class="loc_wrap">
-                <div class="inner">
-                    <ul class="loc_nav">
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">문화예술공간</a></li>
-                        <li><a href="">대전무형문화재전수회관</a></li>
-                        <li><a href="">소개</a></li>
-                    </ul>
-                        <div class="loc_util">
-                            <li><a class="print" href=""></a></li>
-                            <li><a class="sns_list" href=""></a></li>
-                        </div>
-                </div>
-            </div>
-            <p class="inner_title">대전무형문화재전수회관</p>
-            <div class="depth3">
-                <ul>
-                    <li class="active"><a href="">소개</a></li>
-                    <li><a href="">대전무형문화재 예능종목</a></li>
-                    <li><a href="">프로그램</a></li>
-                    <li><a href="">월간일정</a></li>
-                    <li><a href="">이용안내</a></li>
-                    <li><a href="">대관안내</a></li>
-                    <li><a href="">공지사항</a></li>
+        <section class="topIntrosec">
+            <article class="topIntroArt w1200">
+                <ul class="topIntrosec_top">
+                    <li>HOME</li>
+                    <li class="topIntrosec_sel">
+                        <button class="label">문화예술공간</button>
+                        <ul id="topIntrosec_top1">
+                            <li class="optionItem">문화예술공간</li>
+                            <li class="optionItem">사업안내</li>
+                            <li class="optionItem">자료실</li>
+                            <li class="optionItem">알람</li>
+                            <li class="optionItem">정보공개</li>
+                            <li class="optionItem">재단소개</li>
+                        </ul>
+                    </li>
+                    <li class="topIntrosec_sel">
+                        <button class="label2">대전무형재전수회관</button>
+                        <ul id="topIntrosec_top2">
+                            <li class="optionItem2">대전무형재전수회관</li>
+                            <li class="optionItem2">대전전통 나래관</li>
+                            <li class="optionItem2">대전웃다리농악 전수교육관</li>
+                            <li class="optionItem2">대전문학관</li>
+                            <li class="optionItem2">대전테미예술창작센터</li>
+                            <li class="optionItem2">대전예술가의 집</li>
+                        </ul>
+                    </li>
+                    <li class="topIntrosec_sel">
+                        <button class="label3">소개</button>
+                        <ul id="topIntrosec_top3">
+                            <li class="optionItem3">소개</li>
+                            <li class="optionItem3">대전무형문화재 예능종목</li>
+                            <li class="optionItem3">프로그램</li>
+                            <li class="optionItem3">월간일정</li>
+                            <li class="optionItem3">이용안내</li>
+                            <li class="optionItem3">대관안내</li>
+                            <li class="optionItem">공지사항</li>
+                        </ul>
+                    </li>
+                    <li class="Icowrap">
+                        <span class="printIco" onclick="window.print()"></span>
+                        <span class="shareIco">
+                            <ul class="snswrap">
+                                <li>
+                                    <a class="sns"></a>
+                                </li>
+                                <li>
+                                    <a class="facebook" onclick="facebook('소개', ''); return false;"></a>
+                                </li>
+                                <li>
+                                    <a class="naver" onclick="naverblog('소개'); return false;"></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" onclick="twitter('소개'); return false;"></a>
+                                </li>
+                                <li>
+                                    <a class="kakao" onclick="kakaostory('소개'); return false;"></a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
                 </ul>
-            </div>
+                <h2>대전무형문화재전수회관</h2>
+                <ul class="topIntrosec_bottom">
+                    <li>소개</li>
+                    <li>대전무형문화재 예능종목</li>
+                    <li>프로그램</li>
+                    <li>월간일정</li>
+                    <li>이용안내</li>
+                    <li>대관안내</li>
+                    <li>공지사항</li>
+                    <span class="topIntrosec_lineO"></span>
+                </ul>
+            </article>
         </section>
 
         <section class="w1200">
@@ -239,7 +285,7 @@
                 </div>
             </div>
         </section>
-
+        <div id="for_totop" class=""></div>
 
 
     </main>
@@ -282,4 +328,6 @@
         </div>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/dcaf_intro.js"></script>
 </html>

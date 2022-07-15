@@ -945,6 +945,23 @@ main {
     margin-right: 0px;
 }
 
+#for_totop{
+    cursor: pointer;
+    position: fixed;
+    display: block;
+    width: 60px; height: 60px;
+    right: 23px; bottom: 21px;
+    background: url(../img/dcaf_intro/totop.png) no-repeat center/100% 100%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .25s linear, visibility .25s linear;;
+}
+#for_totop.on{
+    opacity: 1;
+    visibility: visible;
+}
+
 
 @media screen and (max-width: 1199px) {
     /* (변경점) 스와이퍼1 반응형 */
