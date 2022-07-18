@@ -88,6 +88,30 @@ $(function () {
         default:
           break;
       };
+
+    });
+    $('.sb_prog_list div').each(function () {
+      $(this).removeClass('temp_opa');
+      switch (dataCode) {
+        case 'A30-A':
+          if (!$(this).hasClass('type1')) $(this).addClass('temp_opa');
+          break;
+        case 'A30-B':
+          if (!$(this).hasClass('type2')) $(this).addClass('temp_opa');
+          break;
+        case 'A30-C':
+          if (!$(this).hasClass('type3')) $(this).addClass('temp_opa');
+          break;
+        case 'A30-D':
+          if (!$(this).hasClass('type4')) $(this).addClass('temp_opa');
+          break;
+        case 'A30-Z':
+          if (!$(this).hasClass('type5')) $(this).addClass('temp_opa');
+          break;
+        default:
+          break;
+      };
+
     });
     e.preventDefault();
   })
