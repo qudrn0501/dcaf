@@ -1,8 +1,8 @@
 //swiper 1
 var swiper1 = new Swiper(".mySwiper1", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 26.6667,
-  slidesPerGroup: 4,
+  slidesPerGroup: 3,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -11,17 +11,19 @@ var swiper1 = new Swiper(".mySwiper1", {
     1199: {
       slidesPerView: 3,
       spaceBetween: 26.6667,
-      slidesPerGroup: 3
+      slidesPerGroup: 3,
     }
   }
+
 });
 
 //swiper 3
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 2,
-  spaceBetween: 15,
+  spaceBetween: 28,
+  slidesPerGroup: 1,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination3",
     clickable: true,
   },
   breakpoints: {
@@ -36,7 +38,7 @@ var swiper3 = new Swiper(".mySwiper3", {
 //swiper 2
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 30,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -68,19 +70,19 @@ $(function () {
     $('.sb_list_wrap .sb_list div').each(function () {
       $(this).removeClass('temp_opa');
       switch (dataCode) {
-        case 'A30_A':
+        case 'A30-A':
           if (!$(this).hasClass('type1')) $(this).addClass('temp_opa');
           break;
-        case 'A30_B':
+        case 'A30-B':
           if (!$(this).hasClass('type2')) $(this).addClass('temp_opa');
           break;
-        case 'A30_C':
+        case 'A30-C':
           if (!$(this).hasClass('type3')) $(this).addClass('temp_opa');
           break;
-        case 'A30_D':
+        case 'A30-D':
           if (!$(this).hasClass('type4')) $(this).addClass('temp_opa');
           break;
-        case 'A30_Z':
+        case 'A30-Z':
           if (!$(this).hasClass('type5')) $(this).addClass('temp_opa');
           break;
         default:

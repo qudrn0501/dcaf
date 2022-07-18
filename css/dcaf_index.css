@@ -4,11 +4,13 @@
     max-width: 893.3333px !important;
     padding-top: 50px;
     box-sizing: border-box;
-    overflow: hidden;
+    position: relative;
 }
 
 .mySwiper1 .swiper-wrapper {
     width: 100% !important;
+    display: flex;
+    justify-content: space-between;
 }
 .mySwiper1 .swiper {
     width: 75%;
@@ -21,6 +23,7 @@ width: 280px !important;
 margin-right: 26.6667px !important;
 text-align: center;
 font-size: 18px;
+opacity: 0;
 
 /* Center slide text vertically */
 display: -webkit-box;
@@ -30,11 +33,20 @@ display: flex;
 -webkit-box-pack: center;
 -ms-flex-pack: center;
 -webkit-justify-content: center;
-justify-content: center;
+justify-content: space-between;
 -webkit-box-align: center;
 -ms-flex-align: center;
 -webkit-align-items: center;
 align-items: center;
+}
+.mySwiper1 .swiper-slide-active {
+    opacity: 1;
+}
+.mySwiper1 .swiper-slide-next {
+    opacity: 1;
+}
+.mySwiper1 .swiper-slide:nth-child(3n) {
+    opacity: 1;
 }
 
 .mySwiper1 .swiper-slide img {
@@ -51,9 +63,8 @@ transition: transform 0.3s;
 }
 
 .swiper-pagination {
-    max-width: 1920px !important;
-    left: 3% !important;
-    bottom: -85px !important;
+    left: -12% !important;
+    bottom: -120px !important;
 }
 
 .swiper-pagination-bullet {
@@ -76,7 +87,7 @@ transition: transform 0.3s;
 
 /* (변경점) 스와이퍼3(사업공모결과) */
 .mySwiper3 {
-    overflow: hidden;
+    position: relative;
 }
 .mySwiper3 .swiper-wrapper {
     display: flex;
@@ -88,7 +99,27 @@ transition: transform 0.3s;
     display: flex;
     justify-content: space-between;
     margin-top: 115px;
+    opacity: 0;
 }
+.mySwiper3 .swiper-slide-active {
+    opacity: 1;
+}
+.mySwiper3 .swiper-slide-next {
+    opacity: 1;
+}
+.mySwiper3 .swiper-slide-next + .swiper-slide:nth-child(4n-1) {
+    opacity: 1;
+}
+.mySwiper3 .swiper-slide-next + .swiper-slide:nth-child(4n-1) + .swiper-slide:nth-child(4n) {
+    opacity: 1;
+}
+.swiper-pagination3 {
+    position: absolute;
+    left: 50% !important;
+    bottom: -120px !important;
+}
+
+
 .mySwiper3 .swiper-slide div {
     width: 279px; height: 420px;
     background-color: #fff;
@@ -279,13 +310,17 @@ transition: transform 0.3s;
 .mySwiper2 {
     width: calc(100% + 20px);
     position: relative;
-    overflow: hidden;
 }
 .mySwiper2 .swiper-wrapper {
     width: 100%;
     /* overflow: hidden; */
     margin-top: 56px;
 }
+/* .mySwiper2 .swiper-frame {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+} */
 
 .mySwiper2 .swiper-slide {
     width: 100% !important;
@@ -293,6 +328,7 @@ transition: transform 0.3s;
     display: flex;
     flex-wrap: wrap;
     margin-left: 0px;
+    opacity: 0;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -308,8 +344,13 @@ transition: transform 0.3s;
     -webkit-align-items: center;
     align-items: center;
 }
+.mySwiper2 .swiper-slide-active {
+    opacity: 1;
+}
+
 .mySwiper2 .swiper-slide div {
     width: 25%; 
+    background-color: #fff;
 }
 .mySwiper2 .swiper-slide div a {
     display: block;
@@ -476,6 +517,39 @@ transition: transform 0.3s;
 }
 .mySwiper2 .swiper-wrapper .swiper-slide div.temp_opa {
     opacity: 0.35;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+    cursor: auto;
+    pointer-events: none;
+}
+.swiper-button-prev {
+    width: 49px !important;
+    height: 15px !important;
+    left: -100px !important;
+    right: auto;
+    background-image: url(../img/dcaf/icn_con_left.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: visible;
+}
+.swiper-button-prev:after {
+    display: none;
+}
+.swiper-button-next {
+    width: 49px !important;
+    height: 15px !important;
+    right: -100px !important;
+    left: auto;
+    background-image: url(../img/dcaf/icn_con_right.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: visible;
+}
+.swiper-button-next:after {
+    display: none;
 }
 
 
@@ -756,119 +830,115 @@ main {
 
 
 /*------------third section start------------*/
-.culture {
+.culture_wrap {
     position: relative;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-.culture img {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 480px;
-    height: 478px;
-    top: -180px;
-    left: -358px;
-    z-index: -1;
-}
-.cul_first {
+    padding-bottom: 100px;
     padding-top: 112px;
 }
-.cul_title h2 {
-    font-size: 50px;
-    counter-reset: #000;
-}
-.cul_title p {
+.culture_wrap > img {
+    position: absolute;
     display: block;
-    padding-left: 1px;
-    margin-top: 18px;
-    font-size: 20px;
-    color: #746e5c;
+    width: 480px;
+    height: 478px;
+    top: -168px;
+    left: -180px;
+    z-index: -1;
 }
-.cul_menu {
-    margin: 83px 0 116px;
-    text-align: center;
+
+.culture_wrap::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 394px;
+    width: 100%;
+    height: 309px;
+    background-color: #f3f3f5;
+    background-image: url(../img/dcaf/deco_gly1.png);
+    background-repeat: no-repeat;
+    background-position: 106% 149px;
+}
+
+.culture {
     display: flex;
+    margin-top: 58px;
     justify-content: space-between;
 }
-.cul_menu::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 200%;
-    height: 309px;
-    top: 50%;
-    left: -50%;
-    background-color: #f3f3f5;
-    z-index: -1;
-}
-.cul_menu::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 361px;
-    height: 359px;
-    right: -306px;
-    bottom: -74px;
-    background: url(../img/dcaf/deco_gly1.png) no-repeat center/100% auto;
-    z-index: -1;
-}
-.cul_menu li {
+
+.culture > li {
     width: 200px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    transform: rotateY(00deg);
+    border-right: 1px solid #fff;
+    transform: perspective(2000px) rotateY(90deg);
+    transition: rotate 0.2s linear, transform 0.4s linear;
 }
-.cul_menu li>a {
-    width: 100%;
-    display: block;
+
+.culture > li:nth-child(1) {
+    transition-delay: 0s;
+}
+.culture > li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.culture > li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.culture > li:nth-child(4) {
+    transition-delay: 0.6s;
+}
+.culture > li:nth-child(5) {
+    transition-delay: 0.8s;
+}
+.culture > li:nth-child(6) {
+    transition-delay: 1s;
+}
+
+.culture > li.ani {
+    transform: perspective(2000px) rotateY(0deg);
+    /* animation: rotate 0.6s linear; */
+}
+
+.culture > li:hover a::before {
+    background-color: #255e8f;
+}
+
+.culture a {
     position: relative;
-    height: 500px;
+    display: block;
+}
+
+.culture a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49 49 49 / 0.8);
+}
+
+.culture p {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    background-repeat: no-repeat;
-    background-position: cover;
-    background-size: 100% auto;
-    text-align: center;
-    border-right: 1px solid #fff;
-
 }
-.cul_menu li::before {
-    content: "";
-    width: 200px;
-    height: 500px;
+
+.culture span {
     display: block;
-    position: absolute;
-    background-color: rgba(49, 49, 49, 0.9);
-}
-.cul_menu li:hover li:before {
-    background-color: #1d5681;
 }
 
-
-
-.cul_menu li>.bg1 {
-    background-image: url(../img/dcaf/bg_culist1.png);
-}.cul_menu li>.bg2 {
-    background-image: url(../img/dcaf/bg_culist2.png);
-}.cul_menu li>.bg3 {
-    background-image: url(../img/dcaf/bg_culist3.png);
-}.cul_menu li>.bg4 {
-    background-image: url(../img/dcaf/bg_culist4.png);
-}.cul_menu li>.bg5 {
-    background-image: url(../img/dcaf/bg_culist5.png);
-}.cul_menu li>.bg6 {
-    background-image: url(../img/dcaf/bg_culist6.png);
-}
-.cul_menu li>a>p {
+.culture img {
+    position: relative;
+    /* 또 릴레이티브 왜...? 겹쳐주려고 높이가 있는 이미지에
+    릴레이티브 나머지 앱솔루트*/
     width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%);
+}
+
+.f_img {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    border-top: 1px solid #7d7d7d;
 }
 /****fourth section start*****/
 .link {
@@ -973,27 +1043,28 @@ main {
     }
 
     .mySwiper1 .swiper-wrapper {
-        width: 70% !important;
+        width: 100% !important;
     }
     .mySwiper1 .swiper {
-        width: 75%;
+        width: 100%;
         justify-content: space-between;
         flex-wrap: nowrap;
     }
 
     .mySwiper1 .swiper-slide {
-        width: 33.3333% !important;
+        width: calc(33.3333% - 4px) !important;
         margin-right: 12px !important;
     }
+
 
     .mySwiper1 .swiper-slide:hover img {
         transform: translate(0, 0px);
     }
     .swiper-pagination {
-        position: relative !important;
+        position: absolute !important;
         z-index: 10 !important;
         bottom: -100px !important;
-        left: -10% !important;
+        left: 4% !important;
     }
     
     .swiper-pagination-bullet {
@@ -1015,15 +1086,31 @@ main {
     /* (변경점) 스와이퍼1 반응형 끝 */
 
     /* (변경점) 스와이퍼3 반응형*/
+    .swiper-pagination3 {
+        left: 45% !important;
+    }
     .mySwiper3 {
         padding-top: 25px;
     }
     .mySwiper3 .swiper-slide {
-        width: 66.5625vmin !important;
+        width: calc(50% - 14px) !important;
         min-width: 0;
         height: 211px;
         margin-top: 0px;
     }
+    .mySwiper3 .swiper-slide {
+        opacity: 1;
+    }
+    /* .mySwiper3 .swiper-slide-next {
+        opacity: 1;
+    }
+    .mySwiper3 .swiper-slide-next + .swiper-slide:nth-child(4n-1) {
+        opacity: 0;
+    }
+    .mySwiper3 .swiper-slide-next + .swiper-slide:nth-child(4n-1) + .swiper-slide:nth-child(4n) {
+        opacity: 0;
+    } */
+
     .mySwiper3 .swiper-slide div {
         width: 66.5625vmin !important;
         min-width: 0;
@@ -1058,7 +1145,7 @@ main {
         padding: 0;
         font-size: 13px;
     }
-    /* (변경점) 스와이퍼3 반응형*/
+    /* (변경점) 스와이퍼3 반응형 끝 */
 
     /* (변경점) 공지사항/입찰/채용 */
     .bnr_notice {
@@ -1132,7 +1219,7 @@ main {
     
     /* (변경점) 고정 배너 반응형 삭제 */
     .bnr_list {
-        width: 133%;
+        width: 100%;
         flex-flow: row nowrap;
         padding-top: 0;
     }
@@ -1141,6 +1228,7 @@ main {
         display: none;
     }
     /* (변경점) 고정 배너 반응형 삭제 끝 */
+
     .sec_first {
         flex-direction: column;
         align-items: center;
@@ -1223,32 +1311,42 @@ main {
     .sec_title span {
         display: block;
     }
-    .cul_menu {
+    .culture_wrap {
+        background-color: #f3f3f5;
+        padding-bottom: 0;
+    }
+
+    .culture_wrap::before {
+        display: none;
+    }
+
+    .culture {
         flex-wrap: wrap;
-        margin-top: 21px;
-        margin-bottom: 0;
+        margin-top: 20px;
         justify-content: center;
     }
-    .cul_menu li {
-        width: 50%;
+
+    .culture > li {
+        width: calc(50% - 1px);
         max-width: 320px;
         height: 24.6875vmin;
     }
-    .cul_menu li>a {
-        height: 24.6875vmin;
-        overflow: hidden;
-        background-color: #255e8f;
-    }
-    .cul_menu li>a>p {
-        font-size: 4vmin;
-        top: 25%;
-    }
-    .cul_menu li::before {
-        content: "";
-        height: 24.6875vmin;
-        display: block;
+
+    .culture .culture img {
         position: absolute;
-        background-color: rgba(49, 49, 49, 0.9);
     }
 
+    .culture a {
+        display: block;
+        overflow: hidden;
+        height: 24.6875vmin;
+        font-size: 4.375vmin;
+    }
+    .culture a p {
+        font-size: 4vmin;
+    }
+    .culture a::before {
+        background-color: #255e8f;
+    }
 }
+

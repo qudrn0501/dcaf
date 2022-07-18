@@ -13,52 +13,135 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <ul class="link_nav">
-            <li><a href="">이달의 문화</a></li>
-            <li><a href="">생활문화포털</a></li>
-            <li><a href="">대전예술 씨앗(후원하기)</a></li>
-            <li><a href="">문화예술활동공간</a></li>
-        </ul>
-        <h1><a href="">
-            <img src="img/dcaf/logo.png" alt="">
-        </a></h1>
-        <ul class="util_nav">
-            <li class="mo_none">
-                <a class="font_p" href="">A+</a>
-                <a class="font_n" href="">A</a>
-                <a class="font_m" href="">A-</a>
-            </li>
-            <li class="user"><a href="">로그인</a></li>
-            <li class="search mo_none"><a href=""></a>
-                <form action="">
-                    <input type="hidden">
-                </form>
-            </li>
-        </ul>
-    </header>
-    <nav>
-        <ul class="w1200 mo_none">
-            <li><a href="">문화예술공간</a></li>
-            <li><a href="">사업안내</a></li>
-            <li><a href="">자료실</a></li>
-            <li><a href="">알림</a></li>
-            <li><a href="">정보공개</a></li>
-            <li><a href="">재단소개</a></li>
-        </ul>
-        <div class="m_search pc_none">
-            <input type="text">
-            <a href=""></a>
-        </div>
-        <div class="btn_nav">
-            <a href="">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-    </nav>
-
+    <div id="headerWrap" class="header_wrap">
+        <header>
+            <ul class="link_nav">
+                <li><a href="">이달의 문화</a></li>
+                <li><a href="">생활문화포털</a></li>
+                <li><a href="">대전예술 씨앗(후원하기)</a></li>
+                <li><a href="">문화예술활동공간</a></li>
+            </ul>
+            <h1 class="logo">
+                <a href="">
+                    <img src="img/dcaf/logo.png" alt="" />
+                </a>
+            </h1>
+            <ul class="util_nav">
+                <li class="mo_none">
+                    <a class="font_p" href="">A+</a>
+                    <a class="font_n" href="">A</a>
+                    <a class="font_m" href="">A-</a>
+                </li>
+                <li class="user"><a href="">로그인</a></li>
+                <li class="search mo_none"><a href=""></a></li>
+            </ul>
+        </header>
+        <nav id="mainNav">
+            <h1 class="logo_white">
+                <a href="">
+                    <img src="img/dcaf/logo2.png" alt="" />
+                </a>
+            </h1>
+            <ul class="w1200 mo_none">
+                <li><a href="">문화예술공간</a></li>
+                <li><a href="">사업안내</a></li>
+                <li><a href="">자료실</a></li>
+                <li><a href="">알림</a></li>
+                <li><a href="">정보공개</a></li>
+                <li><a href="">재단소개</a></li>
+            </ul>
+            <div class="m_search pc_none">
+                <input type="text" />
+                <a href=""></a>
+            </div>
+            <div class="btn_nav">
+                <a href="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </nav>
+        <!-- <nav class="full_menu">
+            <div class="full_menu_inner">
+                <div class="close">
+                    <a href="">전체메뉴 닫기</a>
+                </div>
+                <ul class="listwrap">
+                    <li>
+                        <p href="#">문화예술공간</p>
+                        <ul class="depth2">
+                            <li><a href="">대전무형문화재전수회관</a></li>
+                            <li><a href="">대전전통나래관</a></li>
+                            <li><a href="">대전웃다리농악 전수교육관</a></li>
+                            <li><a href="">대전문학관</a></li>
+                            <li><a href="">대전테미예술창작센터</a></li>
+                            <li><a href="">대전예술가의 집</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p href="#">사업안내</p>
+                        <ul class="depth2">
+                            <li><a href="">문화예술지원</a></li>
+                            <li><a href="">생활문화지원</a></li>
+                            <li><a href="">정책연구·경영</a></li>
+                            <li><a href="">예술경영복지지원</a></li>
+                            <li><a href="">예술교육지원센터</a></li>
+                            <li><a href="">문화예술활동공간</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p href="#">자료실</p>
+                        <ul class="depth2">
+                            <li><a href="">발간자료</a></li>
+                            <li><a href="">서식자료</a></li>
+                            <li><a href="">정책자료</a></li>
+                            <li><a href="">교육자료</a></li>
+                            <li><a href="">일반자료</a></li>
+                            <li><a href="">갤러리</a></li>
+                            <li><a href="">뉴스레터</a></li>
+                            <li><a href="">웹진</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p href="#">알림</p>
+                        <ul class="depth2">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">사업공모·결과</a></li>
+                            <li><a href="">입찰공고</a></li>
+                            <li><a href="">채용공고</a></li>
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">타기관소식</a></li>
+                            <li><a href="">경청과 소통</a></li>
+                            <li><a href="">실시간SNS</a></li>
+                            <li><a href="">문화예술정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p href="#">정보공개</p>
+                        <ul class="depth2">
+                            <li><a href="">윤리경영</a></li>
+                            <li><a href="">경영공시</a></li>
+                            <li><a href="">정관/규정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p href="#">재단소개</p>
+                        <ul class="depth2">
+                            <li><a href="">인사말</a></li>
+                            <li><a href="">경영방향</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">로고(CI)</a></li>
+                            <li><a href="">조직 및 연락처</a></li>
+                            <li><a href="">문화기부</a></li>
+                            <li><a href="">유관/협약기관</a></li>
+                            <li><a href="">오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+    </div>
 
 
 
@@ -330,4 +413,5 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/dcaf_intro.js"></script>
+<script src="js/common.js"></script>
 </html>
