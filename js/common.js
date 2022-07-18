@@ -47,12 +47,11 @@ const navtab = {
         // 모바일 버튼 클릭
         $(mobBtn).click(function () {
             $(".menu_clip").addClass("on");
-            mobBtn.preventDefault();
+
         });
         // 닫기 버튼 클릭
         $(closeBtn).click(function () {
             $(".menu_clip").removeClass("on");
-            closeBtn.preventDefault();
         });
     }
 }
@@ -60,3 +59,18 @@ const navtab = {
 $(document).ready(function () {
     navtab.init();
 })
+
+// 스크롤 제한 ON
+function scroll_on() {
+    $('.header_wrap').on('scroll touchmove mousewheel', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    });
+}
+
+// 스크롤 제한 OFF
+function scroll_off() {
+    $('.header_wrap').off('scroll touchmove mousewheel');
+}
+
