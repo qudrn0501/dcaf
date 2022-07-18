@@ -35,3 +35,26 @@ function scrollfix() {
 window.addEventListener('load', scrollfix);
 window.addEventListener('scroll', scrollfix);
 
+// const navtab = {
+
+//     init: function () {
+//         this.motab();
+//     },
+//     motab: function () {
+//         let mobBtn = $(".menu_open");
+//         let closeBtn = $(".menu_close");
+
+//         // 모바일 버튼 클릭
+//         $(mobBtn).click(function () {
+//             $(".hide_menu").addClass("on");
+//         });
+//         // 닫기 버튼 클릭
+//         $(closeBtn).click(function () {
+//             $(".hide_menu").removeClass("on");
+//         });
+//     }
+// }
+
+// $(document).ready(function () {
+//     navtab.init();
+// })

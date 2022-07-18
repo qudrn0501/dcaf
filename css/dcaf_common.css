@@ -148,7 +148,12 @@ header > ul {
 }
 
 /* nav start */
-
+.hide_menu {
+    display: none;
+}
+.hide_meun.on {
+    display: block;
+}
 nav {
     position: relative;
     background-color: #fff;
@@ -268,7 +273,7 @@ nav.fix .btn_nav span {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(../img/icn_cross.png);
+    background-image: url(../img/dcaf/icn_cross.png);
     z-index: 1;
 }
 
@@ -304,27 +309,27 @@ nav.fix .btn_nav span {
 }
 
 .listwrap > li:nth-child(1) > p {
-    background-image: url(../img/icn_nav1.png);
+    background-image: url(../img/dcaf/icn_nav1.png);
     background-position: 10px center;
 }
 .listwrap > li:nth-child(2) > p {
-    background-image: url(../img/icn_nav2.png);
+    background-image: url(../img/dcaf/icn_nav2.png);
     background-position: 12px center;
 }
 .listwrap > li:nth-child(3) > p {
-    background-image: url(../img/icn_nav3.png);
+    background-image: url(../img/dcaf/icn_nav3.png);
     background-position: 12px center;
 }
 .listwrap > li:nth-child(4) > p {
-    background-image: url(../img/icn_nav3.png);
+    background-image: url(../img/dcaf/icn_nav3.png);
     background-position: 11px center;
 }
 .listwrap > li:nth-child(5) > p {
-    background-image: url(../img/icn_nav4.png);
+    background-image: url(../img/dcaf/icn_nav4.png);
     background-position: 9px center;
 }
 .listwrap > li:nth-child(6) > p {
-    background-image: url(../img/icn_nav5.png);
+    background-image: url(../img/dcaf/icn_nav5.png);
     background-position: 12px center;
 }
 
@@ -358,6 +363,184 @@ nav.fix .btn_nav span {
 .listwrap > li > ul > li > a {
     color: #000;
 }
+
+/* hide menu */
+.menu-list{
+    width: 1200px;
+    margin: auto;
+}
+.menu-list-item{
+    display: flex;
+}
+.menu-list-item>p{
+    width: 19.25%;
+    padding: 0 10px 0 54px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 120px;
+    background-repeat: no-repeat;
+}
+.menu-list-item>ul{
+    display: flex;
+    width: 80.75%;
+    flex-wrap: wrap;
+    padding: 15px 0 15px 42px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+}
+.menu-list>a{
+    width: 28px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    background-image: url(../img/dcaf/icn_cross.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+/* 메뉴 목록? 입니다 4번째 li부터 코드가 괴랄해서 똑같이는 못하고 위치 정리만 했습니다 */
+.menu-list-item>ul>li{
+    line-height: 3;
+    margin-right: 30px;
+}
+.menu-list-item>ul>li>a{
+    color: #000;
+}
+.menu-list-item:nth-child(3n-1)>p{
+    border-bottom: 1px solid #0066b2;
+    color: #0066b2;
+}
+.menu-list-item:nth-child(3n)>p{
+    border-bottom: 1px solid #e24b84;
+    color: #e24b84;
+}
+.menu-list-item:nth-child(3n-2)>p{
+    border-bottom: 1px solid #f9a51a;
+    color: #f9a51a;
+}
+.menu-list-item:nth-child(2)>p{
+    background-position: 10px center;
+    background-image: url(../img/dcaf/icn_nav1.png);
+}
+.menu-list-item:nth-child(3)>p{
+    background-position: 12px center;
+    background-image: url(../img/dcaf/icn_nav2.png);
+}
+.menu-list-item:nth-child(4)>p{
+    background-position: 12px center;
+    background-image: url(../img/dcaf/icn_nav3.png);
+}
+.menu-list-item:nth-child(5)>p{
+    background-position: 11px center;
+    background-image: url(../img/dcaf/icn_nav4.png);
+}
+.menu-list-item:nth-child(6)>p{
+    line-height: 80px;
+    background-position: 9px center;
+    background-image: url(../img/dcaf/icn_nav5.png);
+}
+.menu-list-item:nth-child(7)>p{
+    background-position: 12px center;
+    background-image: url(../img/dcaf/icn_nav6.png);
+}
+
+.header_accordion{
+    display: none;
+}
+input[id*="check"]{
+    display: none;
+}
+.m__menu{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 19px;
+    font-size: 20.01px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #0066b2;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.m__menu>a{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(50%, -50%);
+    background-image: url(../img/dcaf/75519.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+input[id*="check"] + label {
+    display: block;
+    line-height: 46px;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    cursor: pointer;
+    background-color: #efefef;
+    font-size: 18.01px;
+    font-weight: 300;
+    padding: 0 10px 0 44px;
+}
+input[id*="check"] + label + div{
+    padding-left: 58px;
+    max-height: 0;
+    overflow: hidden;
+}
+input[id*="check"]:checked + label + div{
+    max-height: 500px;
+}
+input[id*="check"] + label + div a{
+    font-size: 15.01px;
+    line-height: 3;
+    color: #000;
+}
+.label1{
+    background-size: 14px auto;
+    background-position: 17px center;
+    background-image: url(../img/dcaf/icn_nav1.png);
+    background-repeat: no-repeat;
+}
+.label2{
+    background-size: 14px auto;
+    background-position: 17px center;
+    background-image: url(../img/dcaf/icn_nav2.png);
+    background-repeat: no-repeat;
+}
+.label3{
+    background-size: 14px auto;
+    background-position: 17px center;
+    background-image: url(../img/dcaf/icn_nav3.png);
+    background-repeat: no-repeat;
+}
+.label4{
+    background-size: 14px auto;
+    background-position: 17px center;
+    background-image: url(../img/dcaf/icn_nav4.png);
+    background-repeat: no-repeat;
+}
+.label5{
+    background-size: 14px auto;
+    background-position: 17px center;
+    background-image: url(../img/dcaf/icn_nav5.png);
+    background-repeat: no-repeat;
+}
+.label6{
+    background-size: 14px auto;
+    background-position: 17px center;
+    background-image: url(../img/dcaf/icn_nav6.png);
+    background-repeat: no-repeat;
+}
+
 
 /*-------------------footer start----------------*/
 footer {
@@ -561,6 +744,19 @@ address li:first-child {
         background-repeat: no-repeat;
         background-position: center center;
     }
+    @media screen and (max-width: 1200px){
+        .menu-list{
+            display: none;
+        }
+        .header_accordion{
+            display: block;
+        }
+        /* header{
+            overflow-y: scroll;
+        } */
+    }
+    
+
 
 
 

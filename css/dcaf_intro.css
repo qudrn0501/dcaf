@@ -7,99 +7,132 @@ body {
     text-align: center;
 
 }
-
-.topIntrosec{
+.sub_topcont {
+    background-image: url(../img/dcaf/sub_bg348.png);
     position: relative;
-    width: 100%;  
-    background-image: url(../img/dcaf_intro/sub_bg348.png);
+    height: 196px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.topIntrosec::after{
-    content: "";
-    position: absolute;
-    top: 16%;
-    width: 100%; height: 1px;
-    background-color: #fff;
-}
-.topIntrosec_top{
-    display: flex;
-    align-items: center;
-    width: 100%; height: 40px;
-}
-.topIntrosec_top>li{
+.loc_wrap {
     position: relative;
-    width: 25%; height: 100%;
-    color: #fff;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    font-size: 0;
     text-align: center;
-    line-height: 40px;
+    z-index: 10;
+}
+.loc_wrap .inner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
     border-left: 1px solid #fff;
 }
-.topIntrosec_top>li>ul{
+.loc_nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 83.333333%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: left;
+}
+.loc_nav > li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    line-height: 39px;
+    box-sizing: border-box;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+.loc_nav > li > ul {
     cursor: pointer;
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     border: none;
     background: none;
     outline: none;
     font-size: 16px;
     text-align: center;
     color: #fff;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 4%);
 }
-.topIntrosec_sel{
-    z-index: 999;
-}
-.topIntrosec_sel::after{
-    content: "";
-    position: absolute;
-    top: 17px;
-    right: 5.622489%;
-    width: 8px; height: 7px;
-    background: url('../img/dcaf_intro/icn_tri_down.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 #topIntrosec_top1{display: none;}
 #topIntrosec_top2{display: none;}
 #topIntrosec_top3{display: none;}
-.topIntrosec_sel>button{
-    cursor: pointer;
-    position: relative;
-    width: 100%; height: 100%;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0;
-}
-.topIntrosec_sel>button.on{ 
-    background-color: #fff;
-    color: #2b2b2b;
-    font-weight: 700;
-}
-.topIntrosec_top>li>ul>li{
+
+.loc_nav > li > ul > li{
     background-color: #fff;
     font-size: 16px;
     line-height: 39px;
     color: #2b2b2b;
 }
-.Icowrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Icowrap>span{
-    cursor: pointer;
+
+.loc_nav > li > a {
+    position: relative;
     display: block;
-    width: 60px; height: 39px;
-    background-position: center center;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #fff;
 }
-.printIco{
+.loc_nav > li:not(:first-of-type) > a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 8px;
+    height: 7px;
+    top: 17px;
+    right: 5.622489%;
+    background-repeat: no-repeat;
+    background-image: url(../img/dcaf_intro/icn_tri_down.png);
+    background-size: cover;
+}
+.loc_util {
+    display: inline-block;
+    vertical-align: top;
+    width: 16.666667%;
+    height: 100%;
+    text-align: center;
+}
+.loc_util > li:not(:last-of-type) {
+    margin-right: 23px;
+}
+.loc_util > li:first-of-type {
+    margin-left: 14px;
+}
+.loc_util > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 100%;
+}
+.loc_util > li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.loc_util .print {
     background-image: url(../img/dcaf_intro/icn_print.png);
 }
-.shareIco{
+.loc_util .sns_list {
     background-image: url(../img/dcaf_intro/icn_sns.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
 }
 .snswrap{
     display: none;
@@ -121,39 +154,56 @@ body {
 .naver{background-image: url(../img/dcaf_intro/icn_sns_nb.png);}
 .twitter{background-image: url(../img/dcaf_intro/icn_sns_tw.png);}
 .kakao{background-image: url(../img/dcaf_intro/icn_sns_ks.png);}
-/**/
-.topIntroArt{
-    position: relative;
-}
-.topIntroArt>h2{
+
+
+.inner_title {
+    position: absolute;
+    line-height: 1;
+    top: calc(50% - 8px);
+    left: 50%;
     font-size: 30px;
     color: #ffc000;
     text-align: center;
-    padding: 51.5px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
 }
-.topIntrosec_bottom{
+.depth3 {
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 53px;
+    bottom: -103px;
+    margin: 0 auto;
     background-color: rgba(255,255,255,.7);
+    font-size: 0;
+    z-index: 1;
 }
-.topIntrosec_bottom>li{
-    cursor: pointer;
-    width: 14.2%;
+.depth3 li {
+    position: relative;
+    display: inline-block;
+    width: 14.2857%;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+}
+.depth3  li > a {
+    display: block;
+    width: 100%;
+    height: 53px;
+    color: #000;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
-    text-align: center;
-    line-height: 53px;
-    white-space: nowrap;
 }
-.topIntrosec_lineO{
+.depth3 li.active::after {
     position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
     bottom: 0;
-    width: 14.2%; height: 3px;
-    background-color: #ffc000;
+    left: 0;
+    background: #ffc000;
 }
-
 
 .ms_title {
     display: inline-block;
@@ -431,7 +481,7 @@ body {
     visibility: visible;
 }
 
-@media screen and (max-width: 1195px) {
+@media screen and (max-width: 1199px) {
     .loc_wrap {
         display: none;
     }

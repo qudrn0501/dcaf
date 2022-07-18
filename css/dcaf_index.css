@@ -45,7 +45,7 @@ align-items: center;
 .mySwiper1 .swiper-slide-next {
     opacity: 1;
 }
-.mySwiper1 .swiper-slide:nth-child(3n) {
+.mySwiper1 .swiper-slide-next + .swiper-slide:nth-child(3n) {
     opacity: 1;
 }
 
