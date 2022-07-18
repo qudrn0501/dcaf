@@ -148,10 +148,10 @@ header > ul {
 }
 
 /* nav start */
-.hide_menu {
+.menu_clip {
     display: none;
 }
-.hide_meun.on {
+.menu_clip.on {
     display: block;
 }
 nav {
@@ -238,141 +238,16 @@ nav.fix .btn_nav span {
     background-color: #fff;
 }
 
-.full_menu {
-    width: 100%;
-    background-color: #fff;
-}
 
-.full_menu_inner {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.close {
-    position: absolute;
-    display: block;
-    width: 28px;
-    height: 29px;
-    top: 23px;
-    right: 23px;
-    padding: 0;
-}
-
-.close a {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font-size: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../img/dcaf/icn_cross.png);
-    z-index: 1;
-}
-
-.listwrap {
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    background-color: #fff;
-}
-
-.listwrap li {
-    display: inline-table;
-    width: 100%;
-    padding: 0;
-}
-
-.listwrap > li > p,
-.listwrap > li > ul {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    border-bottom: 1px solid #eaeaea;
-}
-
-.listwrap > li p {
-    width: 19.25%;
-    padding: 0 10px 0 54px;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: left;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
-
-.listwrap > li:nth-child(1) > p {
-    background-image: url(../img/dcaf/icn_nav1.png);
-    background-position: 10px center;
-}
-.listwrap > li:nth-child(2) > p {
-    background-image: url(../img/dcaf/icn_nav2.png);
-    background-position: 12px center;
-}
-.listwrap > li:nth-child(3) > p {
-    background-image: url(../img/dcaf/icn_nav3.png);
-    background-position: 12px center;
-}
-.listwrap > li:nth-child(4) > p {
-    background-image: url(../img/dcaf/icn_nav3.png);
-    background-position: 11px center;
-}
-.listwrap > li:nth-child(5) > p {
-    background-image: url(../img/dcaf/icn_nav4.png);
-    background-position: 9px center;
-}
-.listwrap > li:nth-child(6) > p {
-    background-image: url(../img/dcaf/icn_nav5.png);
-    background-position: 12px center;
-}
-
-.listwrap > li:nth-child(3n-2) > p {
-    border-bottom: 1px solid #0066b2;
-    color: #0066b2;
-}
-
-.listwrap > li:nth-child(3n-1) > p {
-    border-bottom: 1px solid #e24b84;
-    color: #e24b84;
-}
-
-.listwrap > li:nth-child(3n) > p {
-    border-bottom: 1px solid #f9a51a;
-    color: #f9a51a;
-}
-
-.listwrap > li > ul {
-    width: 80.75%;
-    padding: 15px 0 15px 42px;
-    box-sizing: border-box;
-}
-
-.listwrap > li > ul > li {
-    display: inline-block;
-    width: 22%;
-    line-height: 3;
-}
-
-.listwrap > li > ul > li > a {
-    color: #000;
-}
-
-/* hide menu */
-.menu-list{
+/* 클립 메뉴 시작 */
+.menu_list{
     width: 1200px;
     margin: auto;
 }
-.menu-list-item{
+.menu_list_item{
     display: flex;
 }
-.menu-list-item>p{
+.menu_list_item > p {
     width: 19.25%;
     padding: 0 10px 0 54px;
     font-size: 24px;
@@ -382,7 +257,7 @@ nav.fix .btn_nav span {
     line-height: 120px;
     background-repeat: no-repeat;
 }
-.menu-list-item>ul{
+.menu_list_item > ul{
     display: flex;
     width: 80.75%;
     flex-wrap: wrap;
@@ -391,71 +266,72 @@ nav.fix .btn_nav span {
     position: relative;
     border-bottom: 1px solid #eaeaea;
 }
-.menu-list>a{
+.menu_list > a {
     width: 28px;
-    height: 28px;
+    height: 29px;
     display: block;
     position: absolute;
     top: 100px;
     right: 70px;
     background-image: url(../img/dcaf/icn_cross.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center;
+    background-size: auto 100%;
     z-index: 1;
 }
 /* 메뉴 목록? 입니다 4번째 li부터 코드가 괴랄해서 똑같이는 못하고 위치 정리만 했습니다 */
-.menu-list-item>ul>li{
+.menu_list_item > ul > li {
     line-height: 3;
     margin-right: 30px;
 }
-.menu-list-item>ul>li>a{
+.menu_list_item > ul > li > a{
     color: #000;
 }
-.menu-list-item:nth-child(3n-1)>p{
+.menu_list_item:nth-child(3n-1) > p{
     border-bottom: 1px solid #0066b2;
     color: #0066b2;
 }
-.menu-list-item:nth-child(3n)>p{
+.menu_list_item:nth-child(3n)>p{
     border-bottom: 1px solid #e24b84;
     color: #e24b84;
 }
-.menu-list-item:nth-child(3n-2)>p{
+.menu_list_item:nth-child(3n-2)>p{
     border-bottom: 1px solid #f9a51a;
     color: #f9a51a;
 }
-.menu-list-item:nth-child(2)>p{
+.menu_list_item:nth-child(2)>p{
     background-position: 10px center;
     background-image: url(../img/dcaf/icn_nav1.png);
 }
-.menu-list-item:nth-child(3)>p{
+.menu_list_item:nth-child(3)>p{
     background-position: 12px center;
     background-image: url(../img/dcaf/icn_nav2.png);
 }
-.menu-list-item:nth-child(4)>p{
+.menu_list_item:nth-child(4)>p{
     background-position: 12px center;
     background-image: url(../img/dcaf/icn_nav3.png);
 }
-.menu-list-item:nth-child(5)>p{
+.menu_list_item:nth-child(5)>p{
     background-position: 11px center;
     background-image: url(../img/dcaf/icn_nav4.png);
 }
-.menu-list-item:nth-child(6)>p{
+.menu_list_item:nth-child(6)>p{
     line-height: 80px;
     background-position: 9px center;
     background-image: url(../img/dcaf/icn_nav5.png);
 }
-.menu-list-item:nth-child(7)>p{
+.menu_list_item:nth-child(7)>p{
     background-position: 12px center;
     background-image: url(../img/dcaf/icn_nav6.png);
 }
 
-.header_accordion{
+.mob_menu {
     display: none;
 }
-input[id*="check"]{
+input[id*="check"] {
     display: none;
 }
-.m__menu{
+.m__menu {
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -469,7 +345,7 @@ input[id*="check"]{
     position: relative;
 }
 
-.m__menu>a{
+.m__menu > a {
     position: absolute;
     top: 50%;
     right: 20px;
