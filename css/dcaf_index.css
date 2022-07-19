@@ -412,7 +412,7 @@ transition: transform 0.3s;
     position: absolute;
     width: 100%;
     height: 24px;
-    bottom: 20px;
+    bottom: 10px;
     color: #5c5c5c;
     font-size: 16px;
     text-align: center;
@@ -442,6 +442,9 @@ transition: transform 0.3s;
 }
 .now {
     background-color: #f29a09;
+}
+.end {
+    background-color: #000000;
 }
 .sb_thum {
     overflow: hidden;
@@ -478,6 +481,12 @@ transition: transform 0.3s;
 }
 .sb_list a:hover .thum_test {
     background-image: url(../img/dcaf/20220329093418471.jpg);
+}
+.sb_list a:hover .thum_nanum {
+    background-image: url(../img/dcaf/20220713133848560.jpg);
+}
+.sb_list a:hover .thum_duo {
+    background-image: url(../img/dcaf/20220711085416426.png);
 }
 
 .sb_tab li.on {

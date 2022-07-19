@@ -62,7 +62,7 @@ $(document).ready(function () {
 
 // 스크롤 제한 ON
 function scroll_on() {
-    $('.header_wrap').on('scroll touchmove mousewheel', function(e) {
+    $('.header_wrap').on('scroll touchmove mousewheel', function (e) {
         e.preventDefault();
         e.stopPropagation();
         return false;

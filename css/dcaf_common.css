@@ -289,8 +289,8 @@ nav.fix .btn_nav span {
 .menu_list_item > ul > li:nth-of-type(5n+1),
 .menu_list_item > ul > li:nth-of-type(4n+1),
 .menu_list_item > ul > li:nth-of-type(4n+1),
-.menu_list_item > .depth3 > li:nth-child(6),
-.menu_list_item > .depth4 > li:nth-of-type(6) {
+.menu_list_item > .depthc > li:nth-child(6),
+.menu_list_item > .depthd > li:nth-of-type(6) {
     width: 24.379719%;
 }
 .menu_list_item > ul > li:nth-of-type(2), 
@@ -302,8 +302,8 @@ nav.fix .btn_nav span {
 .menu_list_item > ul > li:nth-of-type(4n+2), 
 .menu_list_item > ul > li:nth-of-type(4n), 
 .menu_list_item > ul > li:nth-of-type(4n),
-.menu_list_item > .depth3 > li:nth-child(7),
-.menu_list_item > .depth4 > li:nth-of-type(7)  {
+.menu_list_item > .depthc > li:nth-child(7),
+.menu_list_item > .depthd > li:nth-of-type(7)  {
     width: 17.799352%;
 }
 .menu_list_item > ul > li:nth-of-type(3), 
@@ -315,8 +315,8 @@ nav.fix .btn_nav span {
 .menu_list_item > ul > li:nth-of-type(4n+3) {
     width: 25.674217%;
 }
-.menu_list_item > .depth3 > li:nth-of-type(5n),
-.menu_list_item > .depth4 > li:nth-of-type(5n) {
+.menu_list_item > .depthc > li:nth-of-type(5n),
+.menu_list_item > .depthd > li:nth-of-type(5n) {
     width: 10.355987%;
 }
 
